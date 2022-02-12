@@ -1,6 +1,5 @@
 #include "methods.h"
 #include <stdio.h>
-// Прошу не плагіатити, а використовувати як приклад
 int main() {
 	double borderA, borderB; int epsilon, choice;
 	puts("Enter borders and epsilon");

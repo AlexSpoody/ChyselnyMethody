@@ -1,7 +1,6 @@
 #include "methods.h"
 #include <stdio.h>
 #include <math.h>
-// Варік 20
 static double function(double x) {
 	return x * x * x - 3*x*x + 6*x - 4;
 }
@@ -19,7 +18,6 @@ static int sign(double param) {
 	else return 0;
 }
 
-// Метод дихотомії
 double dychotomyMethod(double a, double b, int eps) {
 	double newA = a, newB = b;
 	double newX = (newA + newB) / 2.0;
@@ -32,7 +30,6 @@ double dychotomyMethod(double a, double b, int eps) {
 	dychotomyMethod(newA, newB, eps);
 }
 
-// Метод хорд (не зовсім точний)
 static double secondPohidna(double x) {
 	return 6.0 * x - 6.0;
 }
